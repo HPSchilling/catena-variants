@@ -24,7 +24,9 @@ ifneq (${SSE_TAGS},)
     #Choose optimized hash function
 	HDIR=./src/hashes/blake2-sse
 	HASH=$(HDIR)/blake2b.c
-
+	#use reference implementation
+    HDIR=./src/hashes/blake2-ref
+	HASH=$(HDIR)/blake2b-ref.c
 
 else
 	#use reference implementation

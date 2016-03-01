@@ -21,8 +21,8 @@
 #if defined(HAVE_XOP)
 #include <x86intrin.h>
 #endif
-#else
-#include "Blake2/blake2-round-mka.h"
+//#else
+//#include "Blake2/blake2-round-mka.h"
 //no SSE
 #endif
 
@@ -179,6 +179,9 @@ static inline uint64_t fBlaMka(uint64_t x, uint64_t y)
     lessZ = lessZ << 1;
 
     uint64_t z = lessZ + x + y;
+
+    return z;
+}
 
     
 

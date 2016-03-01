@@ -1,6 +1,6 @@
 #include "blake2b.hpp"
 #include "../registry.hpp"
-
+#undef __SSE2__
 using namespace Catena_Variants;
 
 //Register the registrable with the Registry so it can be used by CatenaFactory

@@ -1,7 +1,7 @@
 #include <string.h>
-
 #include "blake2b1.hpp" 
 #include "../registry.hpp"
+
 #if defined(__SSE2__)
 //SSE optimized
 #include "blake2-sse/blake2-config.h"
